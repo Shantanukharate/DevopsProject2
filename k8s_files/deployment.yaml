@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Shan2cloud-app
+  name: shan2cloud-app
   labels:
-    app: Shan2cloud-app
+    app: shan2cloud-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Shan2cloud-app
+      app: shan2cloud-app
   template:
     metadata:
       labels:
-        app: Shan2cloud-app
+        app: shan2cloud-app
     spec:
       containers:
-      - name: Shan2cloud-container
+      - name: shan2cloud-container
         image: 040750318196.dkr.ecr.us-east-1.amazonaws.com/amazon-prime:latest
         ports:
         - containerPort: 3000
